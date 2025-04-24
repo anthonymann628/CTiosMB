@@ -1,0 +1,29 @@
+^*^5143^*^
+Begin;
+INSERT OR IGNORE INTO routelist (routeid,jobid,jobdetailid,interfacetype,city,state,zip,datevalidfrom,datevalidto,datevalidfromsoft,datevalidtosoft,lookaheadforward,lookaheadside,deliveryforward,deliveryside,routetype) values ('AM1','NQQ100812','7873845','normal','HUNTINGTON','NY','11743','1740978000','1741579199','1740978000','1741579199','160','80','40','40','random');
+UPDATE routelist SET deleted=NULL,deletedconfirmed=NULL   where jobdetailid='7873845';
+
+INSERT OR IGNORE INTO streetsummarylist (summaryid,jobdetailid,streetname,lat,long) values ('359343099','7873845','ABBOTT DR','40.883688','-73.410837');
+INSERT OR IGNORE INTO streetsummarylist (summaryid,jobdetailid,streetname,lat,long) values ('359343100','7873845','AFTON LN','40.899135','-73.39864');
+INSERT OR IGNORE INTO streetsummarylist (summaryid,jobdetailid,streetname,lat,long) values ('359343101','7873845','EDGAR CT','40.874545','-73.429625');
+INSERT OR IGNORE INTO streetsummarylist (summaryid,jobdetailid,streetname,lat,long) values ('359343102','7873845','GRANDVIEW ST','40.863866','-73.422026');
+INSERT OR IGNORE INTO streetsummarylist (summaryid,jobdetailid,streetname,lat,long) values ('359343103','7873845','HUNTINGTON BAY RD','40.88437','-73.403298');
+INSERT OR IGNORE INTO streetsummarylist (summaryid,jobdetailid,streetname,lat,long) values ('359343104','7873845','NEW YORK AVE','40.878471','-73.4222');
+INSERT OR IGNORE INTO streetsummarylist (summaryid,jobdetailid,streetname,lat,long) values ('359343105','7873845','OLIVE ST','40.859097','-73.40986');
+INSERT OR IGNORE INTO streetsummarylist (summaryid,jobdetailid,streetname,lat,long) values ('359343106','7873845','RADCLIFF DR','40.878347','-73.427794');
+INSERT OR IGNORE INTO streetsummarylist (summaryid,jobdetailid,streetname,lat,long) values ('359343107','7873845','WALL ST','40.871795','-73.427517');
+INSERT OR IGNORE INTO streetsummarylist (summaryid,jobdetailid,streetname,lat,long) values ('359343108','7873845','WINDFIELD ST','40.864717','-73.412645');
+
+INSERT OR IGNORE INTO addressdetaillist (jobdetailid,summaryid,deliveryid,streetaddress,searchaddress,addressnumber,qty,lat,long,sequence,jobtype,custsvc,notes,side,photorequired) values ('7873845','359343099','1707624912','ABBOTT DR','93 ABBOTT DR','93','1','40.883688','-73.410837','50','6','0','','','0');
+INSERT OR IGNORE INTO addressdetaillist (jobdetailid,summaryid,deliveryid,streetaddress,searchaddress,addressnumber,qty,lat,long,sequence,jobtype,custsvc,notes,side,photorequired) values ('7873845','359343100','1707624908','AFTON LN','4 AFTON LN','4','1','40.899135','-73.39864','70','6','0','','','0');
+INSERT OR IGNORE INTO addressdetaillist (jobdetailid,summaryid,deliveryid,streetaddress,searchaddress,addressnumber,qty,lat,long,sequence,jobtype,custsvc,notes,side,photorequired) values ('7873845','359343101','1707624909','EDGAR CT','4 EDGAR CT','4','1','40.874545','-73.429625','30','6','0','','','0');
+INSERT OR IGNORE INTO addressdetaillist (jobdetailid,summaryid,deliveryid,streetaddress,searchaddress,addressnumber,qty,lat,long,sequence,jobtype,custsvc,notes,side,photorequired) values ('7873845','359343102','1707624905','GRANDVIEW ST','15 GRANDVIEW ST','15','1','40.863866','-73.422026','100','6','0','','','0');
+INSERT OR IGNORE INTO addressdetaillist (jobdetailid,summaryid,deliveryid,streetaddress,searchaddress,addressnumber,qty,lat,long,sequence,jobtype,custsvc,notes,side,photorequired) values ('7873845','359343103','1707624911','HUNTINGTON BAY RD','73 HUNTINGTON BAY RD','73','1','40.88437','-73.403298','60','6','0','','','0');
+INSERT OR IGNORE INTO addressdetaillist (jobdetailid,summaryid,deliveryid,streetaddress,searchaddress,addressnumber,qty,lat,long,sequence,jobtype,custsvc,notes,side,photorequired) values ('7873845','359343104','1707624904','NEW YORK AVE','138 NEW YORK AVE','138','1','40.878471','-73.4222','80','6','0','','','0');
+INSERT OR IGNORE INTO addressdetaillist (jobdetailid,summaryid,deliveryid,streetaddress,searchaddress,addressnumber,qty,lat,long,sequence,jobtype,custsvc,notes,side,photorequired) values ('7873845','359343105','1707624913','OLIVE ST','101 OLIVE ST','101','1','40.859097','-73.40986','120','6','0','','','0');
+INSERT OR IGNORE INTO addressdetaillist (jobdetailid,summaryid,deliveryid,streetaddress,searchaddress,addressnumber,qty,lat,long,sequence,jobtype,custsvc,notes,side,photorequired) values ('7873845','359343106','1707624907','RADCLIFF DR','24 RADCLIFF DR','24','1','40.878347','-73.427794','40','6','0','','','0');
+INSERT OR IGNORE INTO addressdetaillist (jobdetailid,summaryid,deliveryid,streetaddress,searchaddress,addressnumber,qty,lat,long,sequence,jobtype,custsvc,notes,side,photorequired) values ('7873845','359343107','1707624906','WALL ST','15 WALL ST','15','1','40.871795','-73.427517','20','6','0','','','0');
+INSERT OR IGNORE INTO addressdetaillist (jobdetailid,summaryid,deliveryid,streetaddress,searchaddress,addressnumber,qty,lat,long,sequence,jobtype,custsvc,notes,side,photorequired) values ('7873845','359343108','1707624910','WINDFIELD ST','6 WINDFIELD ST','6','1','40.864717','-73.412645','110','6','0','','','0');
+
+
+Commit;
